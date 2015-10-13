@@ -1,10 +1,16 @@
-// var smile = document.getElementById('smiles');
+var smile = document.getElementById('smiles');
+// var thing = document.getElementById('thing');
+// thing.onclick = hideForm(thing);
 //
-// smile.onclick = function (e) {
-//   $('#smile').show('slow');
-//   e.preventDefault();
-//   // alert('I\'m in here')
-// };
+// function hideForm = function (element, event) {
+//   $(element).toggleClass('hideForm');
+//   event.preventDefault();
+// }
+smile.onclick = function (e) {
+  $('#smile').toggleClass('hideForm');
+  e.preventDefault();
+  // alert('I\'m in here')
+};
 
 // $("#smiles").click(function(e) {
 //     $("#smile").show();
