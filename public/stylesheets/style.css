@@ -1,0 +1,69 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('http://wallpaperput.com/wp-content/uploads/2014/09/light-blue-abstract-design-best-HD-wallpaper.jpg');
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+canvas {
+  background-color: lightyellow;
+  border: 2px solid blue;
+}
+
+.addchild {
+  border: 1px solid lightyellow;
+  border-radius: 20px;
+  width: 30%;
+  padding: 20px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: -10px;
+}
+
+.active {
+  font-size: 20px;
+}
+
+.navbar.navbar-default {
+  background-color: #EDF6FB;
+  border: 0.5px dotted blue;
+}
+
+label {
+  float: left;
+}
+
+.login {
+  border: 1px solid lightyellow;
+  border-radius: 20px;
+  width: 30%;
+  padding: 20px;
+  float: right;
+}
+
+.links {
+  font-size: 20px;
+}
+
+.growthTable {
+  border: 2px solid blue;
+}
+
+tr {
+   border-right: 2px solid lightblue;
+   border-bottom:2px solid lightblue;
+   border-collapse: collapse;
+ }
+
+#smile {
+  visibility: hidden;
+}
