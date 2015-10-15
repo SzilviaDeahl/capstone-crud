@@ -67,3 +67,7 @@ tr {
 .hideForm {
   visibility: hidden;
 }
+
+.err {
+  color:red;
+}

@@ -1,16 +1,23 @@
-var smile = document.getElementById('smiles');
+// var smile = document.getElementById('smiles');
 // var thing = document.getElementById('thing');
-// thing.onclick = hideForm(thing);
-//
-// function hideForm = function (element, event) {
+// var hideForm = function (element, e) {
 //   $(element).toggleClass('hideForm');
-//   event.preventDefault();
-// }
-smile.onclick = function (e) {
-  $('#smile').toggleClass('hideForm');
-  e.preventDefault();
-  // alert('I\'m in here')
-};
+//   e.preventDefault();
+// };
+//
+// thing.onclick = hideForm(thing);
+
+// smile.onclick = function (e) {
+//   $('#smile').toggleClass('hideForm');
+//   e.preventDefault();
+//   // alert('I\'m in here')
+// };
+
+// var addchild = document.getElementById('addchild');
+// addchild.onclick = function (e) {
+//   $('#addkid').toggleClass('hideForm');
+//   e.preventDefault();
+// };
 
 // $("#smiles").click(function(e) {
 //     $("#smile").show();
