@@ -90,4 +90,8 @@ router.post('/tracker/milestones',function (req, res, next) {
   })
 });
 
+router.get('/tracker/new', function (req, res, next) {
+  res.render('tracker/new')
+});
+
 module.exports= router;
