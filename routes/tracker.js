@@ -80,13 +80,52 @@ router.get('/tracker/milestones', function (req, res, next) {
 });
 
 router.post('/tracker/smile', function (req, res, next) {
-  var smile = req.body.smile;
-  var comment = req.body.comment;
+  // var smile = req.body.smile;
+  // var comment = req.body.comment;
   childCollection.insert({
-    smile: smile,
-    comment: comment
+    smile: req.body.smile,
+    comment1: req.body.comment1
   });
-  console.log(req.body);
+  res.redirect('/tracker/index')
+});
+
+router.post('/tracker/sound', function (req, res, next) {
+  childCollection.insert({
+    sound: req.body.sound,
+    comment2: req.body.comment2
+  })
+  res.redirect('/tracker/index')
+});
+
+router.post('/tracker/holdHead', function (req, res, next) {
+  childCollection.insert({
+    holdHead: req.body.holdHead,
+    comment3: req.body.comment3
+  })
+  res.redirect('/tracker/index')
+});
+
+router.post('/tracker/rolls', function (req, res, next) {
+  childCollection.insert({
+    rolls: req.body.rolls,
+    comment4: req.body.comment4
+  })
+  res.redirect('/tracker/index')
+});
+
+router.post('/tracker/sitUp', function (req, res, next) {
+  childCollection.insert({
+    sitUp: req.body.sitUp,
+    comment5: req.body.comment5
+  })
+  res.redirect('/tracker/index')
+});
+
+router.post('/tracker/crawl', function (req, res, next) {
+  childCollection.insert({
+    crawl: req.body.crawl,
+    comment6: req.body.comment6
+  })
   res.redirect('/tracker/index')
 });
 // router.post('/tracker/milestones',function (req, res, next) {
