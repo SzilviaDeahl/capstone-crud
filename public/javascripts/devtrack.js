@@ -7,10 +7,10 @@
 //
 // thing.onclick = hideForm(thing);
 
-// smile.onclick = function (e) {
+// smile.onclick = function () {
 //   $('#smile').toggleClass('hideForm');
-//   e.preventDefault();
-//   // alert('I\'m in here')
+  // e.preventDefault();
+  // alert('I\'m in here')
 // };
 
 // var addchild = document.getElementById('addchild');

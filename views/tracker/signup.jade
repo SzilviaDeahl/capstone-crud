@@ -1,28 +1,27 @@
 extends ../layout
 
 block content
-  form.addchild
-    div.newUser 
-      h2 Sign Up To Start Your Memories!
-      div.signup
-        if errors   
-          for err in errors
-            p.err
-              = err
-        form(action='/tracker/signup' method='post')
-          p
-            label(for='email') Email
-          p
-            input(id='email' class='form-control' type='email' name='email' placeholder='enter you email here' autofocus)
-          p
-            label(for='password') Password 
-          p
-            input(id='password' class='form-control' type='password' name='password' placeholder='enter password')  
-          p
-            label(for='pwdConf') Confirm Password
-          p
-            input(id='pwdConf' class='form-control' type='password' name='pwdConf' placeholder='re-enter password') 
-          p
-            input(id='signup' class='form-control' type='submit' value='Sign Up') 
-      div.footer 
-        a(href='/') Home
+  div.newUser 
+    h2 Sign Up To Start Your Memories!
+    div.signup
+      if errors   
+        for err in errors
+          p.err
+            = err
+      form.addchild(action='/tracker/signup' method='post')
+        p
+          label(for='email') Email
+        p
+          input(id='email' class='form-control' type='email' name='email' placeholder='enter you email here' autofocus)
+        p
+          label(for='password') Password 
+        p
+          input(id='password' class='form-control' type='password' name='password' placeholder='enter password')  
+        p
+          label(for='pwdConf') Confirm Password
+        p
+          input(id='pwdConf' class='form-control' type='password' name='pwdConf' placeholder='re-enter password') 
+        p
+          input(id='signup' type='submit' value='Sign Up') 
+    div.footer 
+      a(href='/') Home
