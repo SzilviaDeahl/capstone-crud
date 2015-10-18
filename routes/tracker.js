@@ -128,10 +128,19 @@ router.post('/tracker/crawl', function (req, res, next) {
   })
   res.redirect('/tracker/index')
 });
+
 router.post('/tracker/supportStand', function (req, res, next) {
   childCollection.insert({
     supportStand: req.body.supportStand,
     comment7: req.body.comment7
+  })
+  res.redirect('/tracker/index')
+});
+
+router.post('/tracker/aloneStand', function (req, res, next) {
+  childCollection.insert({
+    aloneStand: req.body.aloneStand,
+    comment8: req.body.comment8
   })
   res.redirect('/tracker/index')
 });
