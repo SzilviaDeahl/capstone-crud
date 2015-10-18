@@ -128,6 +128,13 @@ router.post('/tracker/crawl', function (req, res, next) {
   })
   res.redirect('/tracker/index')
 });
+router.post('/tracker/supportStand', function (req, res, next) {
+  childCollection.insert({
+    supportStand: req.body.supportStand,
+    comment7: req.body.comment7
+  })
+  res.redirect('/tracker/index')
+});
 // router.post('/tracker/milestones',function (req, res, next) {
 //   childCollection.insert({
 //     first: req.body.first,
