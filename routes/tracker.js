@@ -152,6 +152,14 @@ router.post('/tracker/helpwalk', function (req, res, next) {
   })
   res.redirect('/tracker/index')
 });
+
+router.post('/tracker/aloneWalk', function (req, res, next) {
+  childCollection.insert({
+    aloneWalk: req.body.aloneWalk,
+    comment10: req.body.comment10
+  })
+  res.redirect('/tracker/index')
+});
 // router.post('/tracker/milestones',function (req, res, next) {
 //   childCollection.insert({
 //     first: req.body.first,
