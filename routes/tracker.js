@@ -144,6 +144,14 @@ router.post('/tracker/aloneStand', function (req, res, next) {
   })
   res.redirect('/tracker/index')
 });
+
+router.post('/tracker/helpwalk', function (req, res, next) {
+  childCollection.insert({
+    helpwalk: req.body.helpwalk,
+    comment9: req.body.comment9
+  })
+  res.redirect('/tracker/index')
+});
 // router.post('/tracker/milestones',function (req, res, next) {
 //   childCollection.insert({
 //     first: req.body.first,
