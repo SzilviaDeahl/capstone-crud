@@ -182,6 +182,13 @@ router.post('/tracker/favStory', function (req, res, next) {
   })
   res.redirect('/tracker/index')
 });
+
+router.post('/tracker/addchild', function (req, res, next) {
+  childCollection.insert({
+    childProfile: req.body
+  })
+  res.redirect('/tracker/index')
+});
 // router.post('/tracker/milestones',function (req, res, next) {
 //   childCollection.insert({
 //     first: req.body.first,
