@@ -189,15 +189,15 @@ router.post('/tracker/addchild', function (req, res, next) {
   })
   res.redirect('/tracker/index')
 });
-router.post('/tracker/milestones',function (req, res, next) {
-  childCollection.insert({
-    first: req.body.first,
-    middle: req.body.middle,
-    last: req.body.last
-  }).then(function (child) {
-    res.redirect('/tracker/index')
-  })
-});
+// router.post('/tracker/milestones',function (req, res, next) {
+//   childCollection.insert({
+//     first: req.body.first,
+//     middle: req.body.middle,
+//     last: req.body.last
+//   }).then(function (child) {
+//     res.redirect('/tracker/index')
+//   })
+// });
 //
 // router.get('/tracker/new', function (req, res, next) {
 //   res.render('tracker/new')
